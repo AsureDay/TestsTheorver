@@ -1,0 +1,17 @@
+Num of exps 100000 num_flips 1000
+mean 499.98616 vs median 500.0
+np.percentile(exp_result, q=1) = 463.0
+np.percentile(exp_result, q=99) = 536.0
+σ = 15.751656689199393
+actual chance to pass into 3σ is 99.751% vs 99.73% from theory
+actual chance to pass into 2σ is 95.467% vs 95.45% from theory
+actual chance to pass into 1σ is 68.9% vs 68.27% from theory
+
+Dist explore:
+         sumsquare_error          aic          bic  kl_div  ks_statistic     ks_pvalue
+beta            0.027316  1071.317859  1109.369561     inf      0.014013  1.739552e-17
+gamma           0.027316  1062.242189  1090.780965     inf      0.014085  1.157690e-17
+norm            0.027316  1060.027718  1079.053569     inf      0.014260  4.297022e-18
+lognorm         0.027326  1066.818214  1095.356990     inf      0.015496  2.751720e-21
+expon           0.193932   767.878913   786.904764     inf      0.419406  0.000000e+00
+Best distribution: {'beta': {'a': 115.92041588000856, 'b': 118.19446717935512, 'loc': -60.26768191715263, 'scale': 121.7176610742064}}
